@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>幹開発株式会社 | MKI Engineering — 音響・ワイヤレス通話機器の開発</title>
+<meta name="description" content="幹開発株式会社（MKI Engineering）は1998年創業。マイクロホン・スピーカー等の音響機器から、Bluetooth・DECTを用いた業務用インカム「square」やヘッドセット「VEXA」まで、企画・設計・試作・量産を一貫して手がける開発会社です。東京都武蔵野市。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://mki-engineering-jp.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="幹開発株式会社">
+<meta property="og:title" content="幹開発株式会社 | MKI Engineering">
+<meta property="og:description" content="音響機器とワイヤレス通話機器の開発会社。DECTインカム square、Bluetoothヘッドセット VEXA を開発・製造しています。">
+<meta property="og:image" content="https://mki-engineering-jp.github.io/assets/mki_logo.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "幹開発株式会社",
+  "alternateName": "MKI Engineering",
+  "url": "https://mki-engineering-jp.github.io/",
+  "logo": "https://mki-engineering-jp.github.io/assets/mki_logo.png",
+  "foundingDate": "1998-02",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "180-0006",
+    "addressRegion": "東京都",
+    "addressLocality": "武蔵野市",
+    "streetAddress": "中町1丁目22番7号",
+    "addressCountry": "JP"
+  },
+  "telephone": "+81-422-55-9334",
+  "email": "sales@miki-kk.jp",
+  "brand": [
+    {"@type": "Brand", "name": "square", "url": "https://mki-engineering-jp.github.io/square-dect/"},
+    {"@type": "Brand", "name": "VEXA", "url": "https://mki-engineering-jp.github.io/square-dect/vexa.html"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#ffffff; --bg-alt:#f6f7f9; --ink:#1f2328; --ink-2:#4d555e; --ink-3:#7a828b;
+    --line:#e3e6ea; --accent:#e60012; --navy:#1d2b44;
+    --max:1080px; --radius:10px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.9;font-size:15.5px;letter-spacing:.01em}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+  .hd{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:38px;width:auto}
+  .brand span{font-weight:700;font-size:15px;letter-spacing:.04em}
+  nav ul{display:flex;gap:28px;list-style:none}
+  nav a{font-size:14px;font-weight:500;color:var(--ink-2);padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+  nav a:hover{color:var(--ink);border-color:var(--accent)}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:13px;color:var(--ink-2)}
+  /* hero */
+  .hero{padding:96px 0 80px;background:linear-gradient(180deg,#fff 0%,var(--bg-alt) 100%);border-bottom:1px solid var(--line)}
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:500;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}
+  .hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent)}
+  .hero h1{font-size:clamp(28px,4.2vw,44px);font-weight:700;line-height:1.4;letter-spacing:.02em;color:var(--navy);margin-bottom:22px}
+  .hero p{max-width:640px;font-size:16px;color:var(--ink-2)}
+  .hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-size:14px;font-weight:500;border:1px solid var(--navy);color:var(--navy);transition:.2s}
+  .btn:hover{background:var(--navy);color:#fff}
+  .btn.primary{background:var(--navy);color:#fff}
+  .btn.primary:hover{background:#0f1a2e}
+  .btn svg{width:14px;height:14px}
+  /* sections */
+  section{padding:88px 0}
+  section.alt{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{margin-bottom:44px}
+  .sec-head .en{font-size:12px;font-weight:500;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+  .sec-head h2{font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:.03em;color:var(--navy);line-height:1.4}
+  .sec-head p{margin-top:14px;color:var(--ink-2);max-width:720px}
+  /* services */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;transition:.2s}
+  .card:hover{box-shadow:0 8px 28px rgba(29,43,68,.08);transform:translateY(-2px)}
+  .card .num{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:500;margin-bottom:14px}
+  .card h3{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;line-height:1.5}
+  .card p{font-size:14.5px;color:var(--ink-2)}
+  /* products */
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .product{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.2s}
+  .product:hover{box-shadow:0 10px 32px rgba(29,43,68,.10);transform:translateY(-2px)}
+  .product .media{aspect-ratio:16/10;background:#0e0e10;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .product .media img{width:100%;height:100%;object-fit:cover}
+  .product .body{padding:26px 28px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .product .tag{font-size:11.5px;letter-spacing:.12em;color:var(--ink-3);text-transform:uppercase}
+  .product h3{font-size:22px;font-weight:700;color:var(--navy);letter-spacing:.02em}
+  .product h3 small{font-size:13px;font-weight:500;color:var(--ink-3);margin-left:8px;letter-spacing:.04em}
+  .product p{font-size:14.5px;color:var(--ink-2)}
+  .product .more{margin-top:auto;padding-top:14px;font-size:14px;font-weight:500;color:var(--navy);display:inline-flex;align-items:center;gap:6px}
+  .product .more::after{content:"→";transition:.2s}
+  .product:hover .more::after{transform:translateX(4px)}
+  .note{margin-top:30px;padding:20px 24px;background:#fff;border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;font-size:14.5px;color:var(--ink-2)}
+  /* company */
+  .company{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+  table.profile{width:100%;border-collapse:collapse;font-size:14.5px}
+  table.profile th,table.profile td{padding:15px 6px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  table.profile th{width:120px;font-weight:500;color:var(--ink-3);white-space:nowrap}
+  table.profile td{color:var(--ink)}
+  table.profile td small{display:block;color:var(--ink-3);font-size:13px}
+  .map{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+  .map iframe{width:100%;height:320px;border:0;display:block}
+  .map .addr{padding:16px 20px;font-size:14px;color:var(--ink-2)}
+  /* contact */
+  .contact-box{background:var(--navy);color:#fff;border-radius:14px;padding:52px 48px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .contact-box h2{font-size:26px;font-weight:700;letter-spacing:.03em;line-height:1.4;margin-bottom:12px}
+  .contact-box p{color:rgba(255,255,255,.78);font-size:14.5px}
+  .contact-list{display:flex;flex-direction:column;gap:16px}
+  .contact-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:18px 22px}
+  .contact-item .lbl{font-size:11.5px;letter-spacing:.14em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:4px}
+  .contact-item .val{font-size:22px;font-weight:700;letter-spacing:.03em}
+  .contact-item .val a:hover{text-decoration:underline}
+  .contact-item .sub{font-size:13px;color:rgba(255,255,255,.65);margin-top:2px}
+  /* footer */
+  footer{padding:40px 0 34px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .ft{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .ft img{height:30px}
+  .ft ul{display:flex;gap:22px;list-style:none}
+  .ft a:hover{color:var(--ink)}
+  /* responsive */
+  @media (max-width:860px){
+    .grid3,.grid2,.company,.contact-box{grid-template-columns:1fr}
+    nav ul{display:none;position:absolute;left:0;right:0;top:68px;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 20px 14px}
+    nav ul.open{display:flex}
+    nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+    .menu-btn{display:inline-block}
+    .brand span{display:none}
+    .hero{padding:64px 0 56px}
+    .hero h1 br{display:none}
+    section{padding:64px 0}
+    .contact-box{padding:36px 24px}
+    .contact-item .val{font-size:19px}
+    table.profile th{width:92px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="幹開発株式会社">
+      <img src="assets/mki_logo.png" alt="MKI Engineering">
+      <span>幹開発株式会社</span>
+    </a>
+    <nav>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー">MENU</button>
+      <ul id="menu">
+        <li><a href="#services">事業内容</a></li>
+        <li><a href="#products">製品</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">MKI Engineering / Since 1998</div>
+      <h1>音響とワイヤレスの技術で、<br>現場の「声」を確かに届ける。</h1>
+      <p>幹開発株式会社は、マイクロホン・スピーカーなどの音響機器の開発を原点に、Bluetooth・DECTを用いた業務用の通話機器まで、企画・設計・試作から量産・品質保証までを一貫して手がける開発会社です。</p>
+      <div class="cta">
+        <a class="btn primary" href="#products">製品を見る</a>
+        <a class="btn" href="#contact">お問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="en">Services</div>
+        <h2>事業内容</h2>
+        <p>音を「拾う」「伝える」「届ける」ための機器を、要素部品の設計から製品としての量産・検査まで、自社でつないで開発しています。</p>
+      </div>
+      <div class="grid3">
+        <div class="card">
+          <div class="num">01</div>
+          <h3>音響機器の開発・製造</h3>
+          <p>マイクロホン、マイクユニット（エレクトレット／ダイナミック）、スピーカー、ヘッドホンなどの音響製品・部品を、デザイン・設計・試作から量産まで一貫して手がけます。電子回路設計、基板製作・組立にも対応します。</p>
+        </div>
+        <div class="card">
+          <div class="num">02</div>
+          <h3>ワイヤレス通話機器の開発</h3>
+          <p>Bluetooth・DECTを用いた業務用インカム、ヘッドセット、PTT（プレストーク）デバイスを自社ブランドおよびパートナー企業向けに開発。電波法の技適（工事設計認証）やBluetooth SIG認証の取得まで対応します。</p>
+        </div>
+        <div class="card">
+          <div class="num">03</div>
+          <h3>品質保証・技術サポート</h3>
+          <p>製品・部品の信頼性試験、受入・出荷検査、不具合品の解析と対策、導入後の技術サポートまで担当します。検査機や自動機・治工具の設計製作、各種アダプターの開発も行います。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="en">Products</div>
+        <h2>自社製品</h2>
+        <p>現場の騒音や距離、人数の制約を越えて「そのままの声」を届けることを目指した、業務用の通話機器です。</p>
+      </div>
+      <div class="grid2">
+        <a class="product" href="https://mki-engineering-jp.github.io/square-dect/" target="_blank" rel="noopener">
+          <div class="media"><img src="https://mki-engineering-jp.github.io/square-dect/square_red.jpg" alt="square（スクエア）DECTインカム" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="body">
+            <div class="tag">1.9GHz DECT Intercom</div>
+            <h3>square<small>スクエア</small></h3>
+            <p>1.9GHz帯DECT準拠方式による多人数同時通話インカム。最大8人がミキサー不要で同時に会話でき、伝送遅延約0.05秒。DSPによる音声加工に頼らない、原音に近いクリアな通話が特長です。日本製。</p>
+            <span class="more">製品サイトへ</span>
+          </div>
+        </a>
+        <a class="product" href="https://mki-engineering-jp.github.io/square-dect/vexa.html" target="_blank" rel="noopener">
+          <div class="media"><img src="https://mki-engineering-jp.github.io/square-dect/1_vexa_IMG_0912.jpg" alt="VEXA（ヴェクサ）Bluetoothヘッドセット" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="body">
+            <div class="tag">Bluetooth Headset</div>
+            <h3>VEXA<small>ヴェクサ</small></h3>
+            <p>square専用のオープンイヤー型Bluetoothヘッドセット。耳を塞がず周囲の音を聞きながら通話でき、ボイスコマンド・サイドトーン・マルチポイントに対応。通話最大15.5時間、IP55、技適・Bluetooth SIG認証取得済み。</p>
+            <span class="more">製品サイトへ</span>
+          </div>
+        </a>
+      </div>
+      <div class="note">このほか、パートナー企業向けにBluetoothマイク・PTTデバイスなどの開発・供給を行っています。OEM・共同開発のご相談はお問い合わせください。</div>
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="en">Company</div>
+        <h2>会社概要</h2>
+      </div>
+      <div class="company">
+        <table class="profile">
+          <tr><th>商号</th><td>幹開発株式会社<small>MKI Engineering Co., Ltd.</small></td></tr>
+          <tr><th>所在地</th><td>〒180-0006<br>東京都武蔵野市中町1丁目22番7号</td></tr>
+          <tr><th>TEL / FAX</th><td>TEL 0422-55-9334<br>FAX 0422-55-0099</td></tr>
+          <tr><th>創業</th><td>1998年2月 幹開発有限会社 創業<br>1998年6月 幹開発株式会社に改組</td></tr>
+          <tr><th>資本金</th><td>1,500万円</td></tr>
+          <tr><th>役員</th><td>代表取締役　高橋 政彦<br>取締役　笠井 雅弥</td></tr>
+          <tr><th>従業員</th><td>14名</td></tr>
+          <tr><th>事業内容</th><td>マイクロホン、スピーカー、マイクユニット等の音響製品・部品の開発、設計、試作、量産<br>Bluetooth・DECTを用いたワイヤレス通話機器の開発・製造<br>電子回路設計、基板製作および組立</td></tr>
+          <tr><th>取引銀行</th><td>三井住友銀行 三鷹支店<br>みずほ銀行 三鷹支店</td></tr>
+        </table>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82%E4%B8%AD%E7%94%BA1%E4%B8%81%E7%9B%AE22%E7%95%AA7%E5%8F%B7&output=embed&z=16" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="幹開発株式会社 所在地"></iframe>
+          <div class="addr">JR中央線 三鷹駅 北口より徒歩圏</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="contact-box">
+        <div>
+          <div class="en" style="font-size:12px;letter-spacing:.18em;color:#ff6b7a;text-transform:uppercase;margin-bottom:8px">Contact</div>
+          <h2>お問い合わせ</h2>
+          <p>製品のご購入・お見積り、OEM・共同開発、技術的なご相談は、お電話またはメールでお気軽にお問い合わせください。</p>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="lbl">Tel</div>
+            <div class="val"><a href="tel:0422559334">0422-55-9334</a></div>
+            <div class="sub">受付時間　平日 9:00〜17:00</div>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">E-mail</div>
+            <div class="val"><a href="mailto:sales@miki-kk.jp">sales@miki-kk.jp</a></div>
+            <div class="sub">営業・製品に関するお問い合わせ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap ft">
+    <img src="assets/mki_logo.png" alt="MKI Engineering">
+    <ul>
+      <li><a href="https://mki-engineering-jp.github.io/square-dect/" target="_blank" rel="noopener">square 製品サイト</a></li>
+      <li><a href="https://mki-engineering-jp.github.io/square-dect/vexa.html" target="_blank" rel="noopener">VEXA</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+    <div>&copy; <span id="y"></span> MKI Engineering Co., Ltd.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  var btn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', function(){ menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); }); });
+</script>
+</body>
+</html>
