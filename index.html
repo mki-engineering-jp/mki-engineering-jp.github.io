@@ -96,6 +96,21 @@
   .card .num{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:500;margin-bottom:14px}
   .card h3{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;line-height:1.5}
   .card p{font-size:14.5px;color:var(--ink-2)}
+  .card{position:relative;padding-top:34px}
+  .card::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),rgba(230,0,18,.15));border-radius:var(--radius) var(--radius) 0 0}
+  .card .icon{width:52px;height:52px;border-radius:12px;background:#f3f4f7;display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--navy)}
+  .card .icon svg{width:28px;height:28px}
+  .card .num{position:absolute;right:24px;top:28px;margin:0;font-size:12px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+  .tags span{font-size:12px;color:var(--ink-2);background:#f3f4f7;border:1px solid var(--line);border-radius:999px;padding:3px 10px;white-space:nowrap}
+  .flow{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px}
+  .flow .lbl{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:500;margin-bottom:14px}
+  .flow ol{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:step;position:relative}
+  .flow ol::before{content:"";position:absolute;left:8.33%;right:8.33%;top:0;height:2px;background:var(--line)}
+  .flow li{position:relative;text-align:center;padding:14px 6px 6px;font-size:14px;font-weight:500;color:var(--navy)}
+  .flow li::before{counter-increment:step;content:counter(step,decimal-leading-zero);display:block;font-size:11px;letter-spacing:.12em;color:var(--ink-3);margin-bottom:8px}
+  .flow li i{position:absolute;left:50%;top:-5px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--accent);transform:translateX(-50%)}
+  .flow li small{display:block;font-weight:400;font-size:12px;color:var(--ink-3);margin-top:4px}
   /* products */
   .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
   .product{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.2s}
@@ -140,6 +155,8 @@
   /* responsive */
   @media (max-width:860px){
     .grid3,.grid2,.company,.contact-box{grid-template-columns:1fr}
+    .flow ol{grid-template-columns:repeat(3,1fr);row-gap:18px}
+    .flow ol::before{display:none}
     nav ul{display:none;position:absolute;left:0;right:0;top:68px;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 20px 14px}
     nav ul.open{display:flex}
     nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
@@ -212,19 +229,36 @@
       <div class="grid3">
         <div class="card">
           <div class="num">01</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3M8 21h8"/><path d="M2 9h2M20 9h2M2 13h2M20 13h2" opacity=".5"/></svg></div>
           <h3>音響機器の開発・製造</h3>
           <p>マイクロホン、マイクユニット（エレクトレット／ダイナミック）、スピーカー、ヘッドホンなどの音響製品・部品を、デザイン・設計・試作から量産まで一貫して手がけます。電子回路設計、基板製作・組立にも対応します。</p>
+          <div class="tags"><span>マイクロホン</span><span>マイクユニット</span><span>スピーカー</span><span>ヘッドホン</span><span>回路設計</span><span>基板実装</span></div>
         </div>
         <div class="card">
           <div class="num">02</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 15.5a5 5 0 0 1 0-7M15.5 8.5a5 5 0 0 1 0 7"/><path d="M5.6 18.4a9 9 0 0 1 0-12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></div>
           <h3>ワイヤレス通話機器の開発</h3>
           <p>Bluetooth・DECTを用いた業務用インカム、ヘッドセット、PTT（プレストーク）デバイスを自社ブランドおよびパートナー企業向けに開発。電波法の技適（工事設計認証）やBluetooth SIG認証の取得まで対応します。</p>
+          <div class="tags"><span>Bluetooth</span><span>1.9GHz DECT</span><span>PTT</span><span>ヘッドセット</span><span>技適取得</span><span>Bluetooth SIG</span></div>
         </div>
         <div class="card">
           <div class="num">03</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3>品質保証・技術サポート</h3>
           <p>製品・部品の信頼性試験、受入・出荷検査、不具合品の解析と対策、導入後の技術サポートまで担当します。検査機や自動機・治工具の設計製作、各種アダプターの開発も行います。</p>
+          <div class="tags"><span>信頼性試験</span><span>受入・出荷検査</span><span>不具合解析</span><span>検査機設計</span><span>治工具</span><span>アダプター</span></div>
         </div>
+      </div>
+      <div class="flow">
+        <div class="lbl">PROCESS — 企画から量産・サポートまで一貫対応</div>
+        <ol>
+          <li><i></i>企画・仕様<small>要件整理・提案</small></li>
+          <li><i></i>設計<small>音響・回路・機構</small></li>
+          <li><i></i>試作・評価<small>測定・認証取得</small></li>
+          <li><i></i>量産<small>国内外パートナー</small></li>
+          <li><i></i>検査<small>受入・出荷</small></li>
+          <li><i></i>サポート<small>解析・対策・保守</small></li>
+        </ol>
       </div>
     </div>
   </section>
