@@ -67,11 +67,11 @@
   nav a:hover{color:var(--ink);border-color:var(--accent)}
   .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:13px;color:var(--ink-2)}
   /* hero */
-  .hero{position:relative;overflow:hidden;padding:96px 0 80px;background:linear-gradient(180deg,#fff 0%,var(--bg-alt) 100%);border-bottom:1px solid var(--line)}
+  .hero{position:relative;overflow:hidden;padding:88px 0 72px;background:linear-gradient(180deg,#fff 0%,var(--bg-alt) 100%);border-bottom:1px solid var(--line)}
   .hero .wrap{position:relative;z-index:1}
   .hero-bg{position:absolute;inset:0;pointer-events:none}
-  .hero-bg .arcs{position:absolute;right:-6vw;top:50%;transform:translateY(-50%);width:62vw;max-width:900px;min-width:520px;height:auto;opacity:.9}
-  .hero-bg .wave{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:120px;opacity:.9}
+  .hero-bg .arcs{position:absolute;right:-6vw;top:50%;transform:translateY(-50%);width:62vw;max-width:900px;min-width:520px;height:auto;opacity:.55}
+  .hero-bg .wave{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:90px;opacity:.5}
   .hero-bg .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(29,43,68,.18) 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(90deg,transparent 0%,transparent 45%,#000 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 45%,#000 100%)}
   .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:500;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}
   .hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent)}
@@ -163,10 +163,16 @@
     nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
     .menu-btn{display:inline-block}
     .brand span{display:none}
-    .hero{padding:64px 0 56px}
-    .hero-bg .arcs{right:-40vw;width:120vw;min-width:0;opacity:.75}
+    .hero{padding:56px 0 48px}
+    .hero-bg .arcs{right:-18vw;top:-10vw;transform:none;width:70vw;min-width:0;opacity:.45}
+    .hero-bg .wave{display:none}
     .hero-bg .dots{display:none}
+    .hero .eyebrow{font-size:11.5px;margin-bottom:16px}
+    .hero h1{font-size:24px;line-height:1.5;letter-spacing:0;margin-bottom:16px}
     .hero h1 br{display:none}
+    .hero p{font-size:14.5px;line-height:1.8}
+    .hero .cta{margin-top:24px}
+    .hero .cta .btn{flex:1 1 auto;justify-content:center;text-align:center}
     section{padding:64px 0}
     .contact-box{padding:36px 24px}
     .contact-item .val{font-size:19px}
